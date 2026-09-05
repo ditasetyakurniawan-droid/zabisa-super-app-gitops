@@ -24,7 +24,7 @@ Zabisa workload tags must contain the same full source Git SHA.
 1. GitHub validates source quality and browser E2E.
 2. Jenkins runs private Sonar and digest-pinned Trivy.
 3. Jenkins builds and pushes nine immutable images to
-   `harbor-dt.co.id/zabisa`.
+   `harbor-dt.co.id/devops-apps/zabisa`.
 4. Jenkins verifies Harbor digests and commits the rendered overlay here.
 5. An operator reviews this repository diff.
 6. ArgoCD migration and sync are started separately and manually.

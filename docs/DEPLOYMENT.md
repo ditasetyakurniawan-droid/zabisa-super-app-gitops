@@ -1,7 +1,7 @@
 # Zabisa DT deployment ownership
 
 - Source and Kubernetes templates: `zabisa-super-app`.
-- Immutable images: `harbor-dt.co.id/zabisa`.
+- Immutable images: `harbor-dt.co.id/devops-apps/zabisa`.
 - Rendered DT desired state: this repository.
 - Reconciliation authority: ArgoCD.
 - Database schema changes: seven ordered ArgoCD PreSync Jobs.

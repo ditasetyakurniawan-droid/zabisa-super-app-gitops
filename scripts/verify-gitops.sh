@@ -32,13 +32,13 @@ if grep -RqE 'REPLACE_SHA|:latest([[:space:]]|$)' "$OVERLAY"; then
 fi
 
 mapfile -t image_refs < <(
-  grep -RhE '^[[:space:]]*image:[[:space:]]+harbor-dt\.co\.id/zabisa/' \
+  grep -RhE '^[[:space:]]*image:[[:space:]]+harbor-dt\.co\.id/devops-apps/zabisa/' \
     "$OVERLAY/manifests" | awk '{print $2}'
 )
 [[ "${#image_refs[@]}" == 16 ]] || fail "expected 16 image references, found ${#image_refs[@]}"
 
 for image in "${image_refs[@]}"; do
-  [[ "$image" =~ ^harbor-dt\.co\.id/zabisa/[a-z0-9-]+:${revision}$ ]] \
+  [[ "$image" =~ ^harbor-dt\.co\.id/devops-apps/zabisa/[a-z0-9-]+:${revision}$ ]] \
     || fail "image does not match SOURCE_REVISION: $image"
 done
 
