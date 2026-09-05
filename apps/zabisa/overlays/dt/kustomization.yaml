@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - manifests/academic.yaml
+  - manifests/admin-web.yaml
+  - manifests/api-gateway.yaml
+  - manifests/content.yaml
+  - manifests/db-dt.yaml
+  - manifests/donation.yaml
+  - manifests/identity.yaml
+  - manifests/migrations.yaml
+  - manifests/notification.yaml
+  - manifests/platform.yaml
+  - manifests/student.yaml
+  - manifests/tahfidz.yaml
