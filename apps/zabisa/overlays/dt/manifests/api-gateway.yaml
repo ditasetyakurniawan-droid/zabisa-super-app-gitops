@@ -35,7 +35,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: api-gateway
-        image: harbor-dt.co.id/devops-apps/zabisa/api-gateway:7dc99c4d6fba62f6fef49e8b7527f327df21f8c8
+        image: harbor-dt.co.id/devops-apps/zabisa/api-gateway:69978b396b5ed98394e5ccf449ea78630065d09b
         ports:
         - containerPort: 8080
         env:
