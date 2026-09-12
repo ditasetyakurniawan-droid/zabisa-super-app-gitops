@@ -42,7 +42,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: academic
-        image: harbor-dt.co.id/devops-apps/zabisa/academic:ce8221cfb18004d8f41e32e26b07dcee03fd57dd
+        image: harbor-dt.co.id/devops-apps/zabisa/academic:2b33a5fbc19695358dde405ee0657e5b7312e93f
         ports:
         - containerPort: 8085
         env:
