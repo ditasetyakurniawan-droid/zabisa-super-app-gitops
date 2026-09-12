@@ -1,5 +1,5 @@
 # Zabisa DT desired state
 
 Generated from `ditasetyakurniawan-droid/zabisa-super-app` commit
-`63f32074852bc2f85c793cb4be44051b6b5fac96`. Do not edit files in `manifests/` manually; publish a new
+`c593aab5f9648dcb3841a578f2a4ab53cbf8b688`. Do not edit files in `manifests/` manually; publish a new
 immutable application revision through Jenkins.

@@ -22,7 +22,7 @@ spec:
         fsGroupChangePolicy: OnRootMismatch
       containers:
       - name: admin-web
-        image: harbor-dt.co.id/devops-apps/zabisa/admin-web:63f32074852bc2f85c793cb4be44051b6b5fac96
+        image: harbor-dt.co.id/devops-apps/zabisa/admin-web:c593aab5f9648dcb3841a578f2a4ab53cbf8b688
         ports:
         - containerPort: 3000
         env:
@@ -107,3 +107,22 @@ spec:
   selector:
     matchLabels:
       app: admin-web
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: admin-web
+  namespace: zabisa-app
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: backoffice-dt.zabisa.my.id
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: admin-web
+            port:
+              number: 3000
