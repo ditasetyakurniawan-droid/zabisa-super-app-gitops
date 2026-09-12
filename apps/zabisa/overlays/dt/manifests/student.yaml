@@ -42,7 +42,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: student
-        image: harbor-dt.co.id/devops-apps/zabisa/student:2b33a5fbc19695358dde405ee0657e5b7312e93f
+        image: harbor-dt.co.id/devops-apps/zabisa/student:5ffb0a7732027af8b2f4a29e435545434a983613
         ports:
         - containerPort: 8083
         env:
