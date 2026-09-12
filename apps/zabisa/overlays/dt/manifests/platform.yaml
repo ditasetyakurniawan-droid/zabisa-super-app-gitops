@@ -228,6 +228,24 @@ spec:
       ports:
         - {protocol: TCP, port: 8080}
 ---
+# Cloudflare Tunnel is the only public reviewer path to the API gateway.
+# Both selectors are evaluated together: namespace=cloudflare AND app=cloudflared.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata: {name: allow-cloudflared-ingress-to-api-gateway, namespace: zabisa-app}
+spec:
+  podSelector:
+    matchLabels: {app: api-gateway}
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels: {kubernetes.io/metadata.name: cloudflare}
+          podSelector:
+            matchLabels: {app: cloudflared}
+      ports:
+        - {protocol: TCP, port: 8080}
+---
 # Admin BFF can call only the API gateway; it cannot bypass gateway policy enforcement.
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

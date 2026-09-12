@@ -46,7 +46,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: notification
-        image: harbor-dt.co.id/devops-apps/zabisa/notification:339a35b44f679cca7b52e325541f69b4ae94e818
+        image: harbor-dt.co.id/devops-apps/zabisa/notification:63f32074852bc2f85c793cb4be44051b6b5fac96
         ports:
         - containerPort: 8087
         env:
