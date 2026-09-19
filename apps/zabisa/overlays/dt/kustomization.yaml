@@ -8,6 +8,8 @@ resources:
   - manifests/db-dt.yaml
   - manifests/donation.yaml
   - manifests/identity.yaml
+  - manifests/media-migrations.yaml
+  - manifests/media.yaml
   - manifests/migrations.yaml
   - manifests/notification.yaml
   - manifests/platform.yaml
