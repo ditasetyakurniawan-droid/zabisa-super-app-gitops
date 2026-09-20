@@ -42,7 +42,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: content
-        image: harbor-dt.co.id/devops-apps/zabisa/content:063a3cca5879aabb11055c0957dca2579fedc918
+        image: harbor-dt.co.id/devops-apps/zabisa/content:56040830b508af56ad03c61965b392b8d31c6d4b
         ports:
         - containerPort: 8082
         env:
