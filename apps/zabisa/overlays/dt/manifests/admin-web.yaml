@@ -22,7 +22,7 @@ spec:
         fsGroupChangePolicy: OnRootMismatch
       containers:
       - name: admin-web
-        image: harbor-dt.co.id/devops-apps/zabisa/admin-web:8d84533c67f110f7d983b775996eec90a50188da
+        image: harbor-dt.co.id/devops-apps/zabisa/admin-web:f1c53fcedc834663df16837fa98472a6a9b1a179
         ports:
         - containerPort: 3000
         env:

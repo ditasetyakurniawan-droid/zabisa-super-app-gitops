@@ -50,12 +50,13 @@ spec:
           type: RuntimeDefault
       containers:
         - name: media
-          image: harbor-dt.co.id/devops-apps/zabisa/media:8d84533c67f110f7d983b775996eec90a50188da
+          image: harbor-dt.co.id/devops-apps/zabisa/media:f1c53fcedc834663df16837fa98472a6a9b1a179
           ports:
             - containerPort: 8088
           env:
             - {name: ENVIRONMENT, value: dt}
             - {name: APP_MODE, value: serve}
+            - {name: MEDIA_PUBLIC_BASE_URL, value: "https://api-dt.zabisa.my.id"}
             - {name: MYSQL_HOST, value: db-dt}
             - {name: MYSQL_TLS_MODE, value: verify-ca}
             - {name: MYSQL_TLS_CA_FILE, value: /mysql/tls/ca.pem}
