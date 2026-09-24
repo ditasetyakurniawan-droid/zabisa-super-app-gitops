@@ -40,7 +40,7 @@ spec:
         seccompProfile: {type: RuntimeDefault}
       containers:
         - name: migrate
-          image: harbor-dt.co.id/devops-apps/zabisa/media:56040830b508af56ad03c61965b392b8d31c6d4b
+          image: harbor-dt.co.id/devops-apps/zabisa/media:1a9538f3bde7b2902ab8aac4801b7396ffaec923
           imagePullPolicy: IfNotPresent
           env:
             - {name: ENVIRONMENT, value: dt}
