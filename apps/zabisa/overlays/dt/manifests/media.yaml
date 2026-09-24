@@ -50,7 +50,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: media
-          image: harbor-dt.co.id/devops-apps/zabisa/media:1a9538f3bde7b2902ab8aac4801b7396ffaec923
+          image: harbor-dt.co.id/devops-apps/zabisa/media:7e93f018083f7755ce8b599de8a24fa1fa6cae9f
           ports:
             - containerPort: 8088
           env:
