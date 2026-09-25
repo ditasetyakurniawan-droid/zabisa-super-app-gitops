@@ -41,7 +41,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: migrate
-        image: harbor-dt.co.id/devops-apps/zabisa/identity:befe24b109918fc5ded095b0041b1982981fca00
+        image: harbor-dt.co.id/devops-apps/zabisa/identity:9bb142af42e47d995db33e8440b3c57ce3f86912
         imagePullPolicy: IfNotPresent
         env:
         - name: ENVIRONMENT
@@ -133,7 +133,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: migrate
-        image: harbor-dt.co.id/devops-apps/zabisa/content:befe24b109918fc5ded095b0041b1982981fca00
+        image: harbor-dt.co.id/devops-apps/zabisa/content:9bb142af42e47d995db33e8440b3c57ce3f86912
         imagePullPolicy: IfNotPresent
         env:
         - name: ENVIRONMENT
@@ -225,7 +225,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: migrate
-        image: harbor-dt.co.id/devops-apps/zabisa/student:befe24b109918fc5ded095b0041b1982981fca00
+        image: harbor-dt.co.id/devops-apps/zabisa/student:9bb142af42e47d995db33e8440b3c57ce3f86912
         imagePullPolicy: IfNotPresent
         env:
         - name: ENVIRONMENT
@@ -317,7 +317,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: migrate
-        image: harbor-dt.co.id/devops-apps/zabisa/tahfidz:befe24b109918fc5ded095b0041b1982981fca00
+        image: harbor-dt.co.id/devops-apps/zabisa/tahfidz:9bb142af42e47d995db33e8440b3c57ce3f86912
         imagePullPolicy: IfNotPresent
         env:
         - name: ENVIRONMENT
@@ -409,7 +409,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: migrate
-        image: harbor-dt.co.id/devops-apps/zabisa/academic:befe24b109918fc5ded095b0041b1982981fca00
+        image: harbor-dt.co.id/devops-apps/zabisa/academic:9bb142af42e47d995db33e8440b3c57ce3f86912
         imagePullPolicy: IfNotPresent
         env:
         - name: ENVIRONMENT
@@ -501,7 +501,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: migrate
-        image: harbor-dt.co.id/devops-apps/zabisa/donation:befe24b109918fc5ded095b0041b1982981fca00
+        image: harbor-dt.co.id/devops-apps/zabisa/donation:9bb142af42e47d995db33e8440b3c57ce3f86912
         imagePullPolicy: IfNotPresent
         env:
         - name: ENVIRONMENT
@@ -593,7 +593,7 @@ spec:
           type: RuntimeDefault
       containers:
       - name: migrate
-        image: harbor-dt.co.id/devops-apps/zabisa/notification:befe24b109918fc5ded095b0041b1982981fca00
+        image: harbor-dt.co.id/devops-apps/zabisa/notification:9bb142af42e47d995db33e8440b3c57ce3f86912
         imagePullPolicy: IfNotPresent
         env:
         - name: ENVIRONMENT
