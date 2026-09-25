@@ -22,7 +22,7 @@ spec:
         fsGroupChangePolicy: OnRootMismatch
       containers:
       - name: admin-web
-        image: harbor-dt.co.id/devops-apps/zabisa/admin-web:5bb67dda5b7f20bd14f27f4f34c0de216644d147
+        image: harbor-dt.co.id/devops-apps/zabisa/admin-web:83a25d4930270b56e43ed76aee22ae429524fc23
         ports:
         - containerPort: 3000
         env:
@@ -113,6 +113,8 @@ kind: Ingress
 metadata:
   name: admin-web
   namespace: zabisa-app
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "30m"
 spec:
   ingressClassName: nginx
   rules:
